@@ -159,6 +159,13 @@ section .sub{color:var(--mute);max-width:40em;margin:0 0 36px}
 .pillars div{border-top:1px solid var(--line);padding-top:12px}
 .pillars b{display:block;font:500 13px var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--brass2);margin-bottom:4px}
 @media(max-width:860px){.about,.pillars{grid-template-columns:1fr}.about figure{min-height:260px}}
+.mvv{display:grid;grid-template-columns:1fr 1fr;gap:28px 36px;margin-top:56px;padding-top:36px;border-top:1px solid var(--line)}
+.mvv article h3{font:500 1.25rem var(--disp);margin:0 0 10px;color:var(--navy)}
+.mvv article p,.mvv article li{margin:0 0 8px;font-size:.95rem;color:#3a424c}
+.mvv .full{grid-column:1/-1}
+.mvv ul{margin:0;padding:0 0 0 1.15em}
+@media(max-width:700px){.mvv{grid-template-columns:1fr}}
+.note-src{font-size:.8rem;color:var(--mute);margin:8px 0 0}
 
 /* sectors */
 .sectors{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
@@ -304,7 +311,7 @@ footer a{color:#ece7de}
         <div class="body">
           <h3>Guardias de seguridad intramuros</h3>
           <p>Personal operativo para empresas, corporativos y escuelas. La supervisión la hacen comandantes de zona: que estén cubiertas las asistencias y se cumplan las consignas generales y particulares. Hay uniforme táctico y de gala.</p>
-          <p>También hay servicio de escoltas VIP, por hora, por día o por semana.</p>
+          <p>También ofrecen <a href="#escoltas" style="border-bottom:1px solid var(--brass)">escoltas VIP</a>, por hora, por día o por semana.</p>
         </div>
       </article>
     </div>
@@ -359,6 +366,12 @@ footer a{color:#ece7de}
           </ul>
         </div>
       </article>
+      <article class="card noph reveal" id="escoltas">
+        <div class="body">
+          <h3>Escoltas VIP</h3>
+          <p>En su sitio anterior este servicio tenía página propia. El texto que se pudo recuperar es este: servicio de escoltas VIP, por hora, por día o por semana. Si hay más detalle (perfiles, cobertura o requisitos), se agrega cuando lo envíen.</p>
+        </div>
+      </article>
       <article class="card reveal" style="display:flex;justify-content:center">
         <div class="body" style="display:flex;flex-direction:column;justify-content:center">
           <p class="k" style="margin:0 0 10px">¿Otro requerimiento?</p>
@@ -391,6 +404,29 @@ footer a{color:#ece7de}
       </div>
     </div>
   </div>
+  <div class="w">
+    <div class="mvv">
+      <article>
+        <h3>Misión</h3>
+        <p>Nuestra misión es proporcionar servicios de consultoría de seguridad integral y personalizados para ayudar a nuestros clientes a proteger sus activos, infraestructura y personas. Nos comprometemos a brindar soluciones innovadoras y efectivas que se adapten a las necesidades específicas de cada cliente, cumpliendo con los más altos estándares de calidad y ética.</p>
+      </article>
+      <article>
+        <h3>Visión</h3>
+        <p>Ser líderes de excelencia en el desempeño de servicios de consultoría de seguridad, reconocidos por nuestra perfección y capacidad para coadyuvar con nuestros clientes a proteger sus activos y personas de manera efectiva. Generar confianza con las empresas que buscan mitigar riesgos y garantizar la seguridad en un entorno cada vez más complejo y amenazante en el país.</p>
+      </article>
+      <article class="full">
+        <h3>Valores</h3>
+        <ul>
+          <li>Compromiso con la excelencia y la calidad en nuestros servicios.</li>
+          <li>Respeto por la confidencialidad y la privacidad de nuestros clientes.</li>
+          <li>Innovación y mejora continua en nuestras metodologías y herramientas.</li>
+          <li>Colaboración y trabajo en equipo con nuestros clientes y partes interesadas.</li>
+          <li>Cumplimiento estricto de las leyes y regulaciones aplicables en materia de seguridad.</li>
+        </ul>
+        <p class="note-src">Misión, visión y valores tomados de su página «Quiénes somos». Solo se corrigieron erratas (por ejemplo, «coadyuavar» y «supervición»).</p>
+      </article>
+    </div>
+  </div>
 </section>
 
 <section class="pad" id="sectores">
@@ -402,7 +438,7 @@ footer a{color:#ece7de}
       <article><h3>Empresas y corporativos</h3><p>Análisis de riesgos, guardias intramuros, auditoría y protocolos de actuación.</p></article>
       <article><h3>Escuelas</h3><p>Servicio intramuros y cursos con perspectiva de género e infancia.</p></article>
       <article><h3>Comercios y tiendas</h3><p>Capacitación para el personal ante una situación de crisis, y seguridad en piso.</p></article>
-      <article><h3>Particulares</h3><p>Investigaciones, prendas blindadas, alarmas en casa y protección del vehículo.</p></article>
+      <article><h3>Particulares</h3><p>Investigaciones, escoltas VIP, prendas blindadas, alarmas en casa y protección del vehículo.</p></article>
       <article><h3>Seguridad privada</h3><p>Cursos de derechos humanos y protocolos, y asesoría para la portación ante la SEDENA.</p></article>
       <article><h3>Policía municipal y estatal</h3><p>Programas de capacitación a la medida de cada corporación.</p></article>
     </div>
@@ -525,7 +561,7 @@ footer a{color:#ece7de}
 
 <footer>
   <div class="w">
-    <span>© 2026 SEMESPROCA · Servicios Mexicanos de Seguridad, Protección y Capacitación · Sitio de muestra</span>
+    <span>© 2026 SEMESPROCA · Servicios Mexicanos de Seguridad, Protección y Capacitación · Seguridad intramuros y seguridad electrónica · Sitio de muestra</span>
     <span><a href="#" onclick="alert('Aquí irá el Aviso de Privacidad de SEMESPROCA.');return false">Aviso de privacidad</a></span>
   </div>
 </footer>
